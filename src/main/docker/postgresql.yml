@@ -1,0 +1,11 @@
+version: '2'
+services:
+    session4-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/Session4/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=Session4
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
